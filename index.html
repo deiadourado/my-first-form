@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <title>Golden Pizza: Order Now</title>
+    <link rel="shortcut icon" href="images/pizza.svg" type="image/x-icon" alt="pizzaIcon" />
+
+<!-- Mini figure by IconDuck (Public Domain) https://iconduck.com/icons/215283/pizza -->
+    
+</head>
+<body>
+    <header>
+        <div align="center">
+            <h1>Golden Pizza</h1>
+        </div>
+        <h2>Order your pizza now!</h2>
+    </header>
+    
+    <div align="center">
+         <img src="images/pizzaready.jpg" width="176" height="176" 	vertical-align: center alt="Pizza" >
+    
+    <!-- Pizza by by Cole Kennedy is marked with Public Domain Mark 1.0 https://www.flickr.com/photos/123529748@N03/18139565050 -->
+    </div>
+
+    <main>
+        <form action="pizzaorder-confirmation.php" method="get">
+                <input type="hidden" name="form_sent" value="1" />
+
+            <fieldset>
+                <legend>Personal Informations:</legend>
+                <div>
+                    <label for = "fName">First Name</label>
+                    <input type = "text" name = "fName" id = "fName" size = "25" placeholder="Type your First Name here" />
+                </div> 
+
+                <div>
+                    <label for = "lName">Last Name</label>
+                    <input type = "text" name = "lName" id = "lName" size = "25" placeholder="Type your Last Name here" />  
+                </div>
+
+                <div>
+                    <label for="address">Address Line 1</label>
+                    <input id="address" type="text" name="address" required />
+                </div>
+
+                <div>
+                    <label for="address2">Address Line 2</label>
+                    <input id="address2" type="text" name="address2" />
+                </div>
+
+                <div>
+                    <label for="postalCode">Postal Code</label>
+                    <input id="postalCode" type="postalCode" name="postalCode" required />
+                </div>
+
+                <div>
+                    <label for = "province">Province</label>
+                    <input type = "text" name = "province" id = "province" />
+                </div>
+
+                <div>
+                    <label for = "Phone">Phone</label>
+                    <input type = "tel" name = "Phone" id = "Phone" />
+                </div>
+
+                <div>
+                    <label for = "Email"> Email</label>
+                    <input type = "email" name = "Email" id="Email" />
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Choose your pizza:</legend>
+                <div>
+                    <label for ="pizzaFlavour">Choose your flavour</label>
+                    <select name = "pizzaFlavour" id = "pizzaFlavour">
+                        <option>         </option>
+                        <option>Pepperoni</option>
+                        <option>Four Cheese</option>
+                        <option>Chicken and Bacon</option>
+                        <option>Bacon BBQ</option>
+                        <option>Chicken BBQ</option>
+                        <option>Veggie</option>
+                        <option>Margarita</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for ="pizzaCrust">What type of crust?</label>
+
+                    <input type = "radio" name="pizzaCrust" id="Italian" value="Italian" />
+                    <label for="Italian">Italian</label>
+
+                    <input type = "radio" name="pizzaCrust" id="crunchyThin" value="crunchyThin" />
+                    <label for="crunchyThin">Crunchy Thin</label>
+
+                    <input type = "radio" name="pizzaCrust" id="deepDish" value="deepDish" />
+                    <label for="deepDish">Deep Dish</label>
+
+                    <input type = "radio" name="pizzaCrust" id="panPizza" value="panPizza" />
+                    <label for="panPizza">Pan Pizza</label>
+                </div>
+
+                <div>
+                    <label for ="pizzaSize">How many slices?</label>
+                    <select name = "pizzaSize" id = "pizzaSize">
+                        <option> </option>
+                        <option>4</option>
+                        <option>6</option>
+                        <option>8</option>
+                        <option>10</option>
+                        <option>12</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for ="toppings">Choose your toppings:</label>
+                    <select name = "toppings" id = "toppings">
+                        <option>     </option>
+                        <option>Pepperoni</option>
+                        <option>Extra Cheese</option>
+                        <option>Mushrooms</option>
+                        <option>Onions</option>
+                        <option>Black Olives</option>
+                        <option>Green Peppers</option>
+                        <option>Pineapple</option>
+                        <option>Spinach</option>
+                        <option>No Topping at All</option>
+                    </select>
+                </div>
+
+                <div>
+                    <textarea name: "Comments" id = "observation" raws = "5" cols="50">Write here any observation.</textarea>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Please, choose one:</legend>
+                <div>
+                    <label for ="preference">What do you prefer?</label>
+
+                    <input type = "radio" name="preference" id="takeOut" value="takeOut" />
+                    <label for="takeOut">Take Out</label>
+
+                    <input type = "radio" name="preference" id="delivery" value="delivery" />
+                    <label for="delivery">Delivery</label>
+
+                    <input type = "radio" name="preference" id="eatIn" value="eatIn" />
+                    <label for="eatIn">Eat In</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Where do you want to receive our promotions?</legend>
+                    <div>
+                        <input type="checkbox" name="email" id="email" value="email" />
+                        <label for="email">Email alert</label>
+
+                        <input type="checkbox" name="sms" id="sms" value="sms" />
+                        <label for="sms">Message alerts (SMS)</label>
+
+                        <input type="checkbox" name="none" id="none" value="none" />
+                        <label for="none">I don't want to receive messages</label>
+                    </div>
+                </fieldset>
+            
+                <div align="center">
+                    <fieldset>
+                    <button type="submit"> Save settings</button>
+                    <button type="reset"> Reset</button>
+                    </fieldset>
+                </div>
+
+        </form>
+    </main>
+
+    <div align="right">
+        <footer>
+            <small>©All the content by Andreia Dourado (2023)</small>
+        </footer>
+    </div>
+</body>
+</html>

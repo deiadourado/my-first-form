@@ -1,0 +1,45 @@
+html {
+    background-color: #546711;
+}
+
+body {
+	font-size: 100%;
+	color: #000;
+	width: 760px;
+	background-color: #FFF;
+	margin: 20px auto;
+	padding: 2em 2em 4em 2em;
+	border-radius: 8px;
+    border-color: goldenrod;
+    border-style: double;
+}
+
+h1 {
+    color: goldenrod;
+	margin-top: 0;
+	width: 200px;
+	height: 10px;
+}
+
+h2 {
+    text-align: center;
+    color: darkslategray;
+    
+}
+
+fieldset {
+    border: 1px solid	#DCDCDC
+}
+
+legend {
+    font-weight: bold;
+    font-size: 75%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    color: #000;
+}
+
+fieldset div {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 0.5em;
+}
